@@ -1,6 +1,8 @@
 import LandingPage from "./apps/LandingPage/LandingPage";
 import styled from "styled-components";
 import EventPage from "./apps/EventPage/EventPage";
+import { Routes, BrowserRouter, Route } from "react-router-dom";
+import EventCreatingPage from "./apps/EventCreatingPage/EventCreatingPage";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -14,7 +16,13 @@ const Wrapper = styled.div`
 function App() {
   return (
     <Wrapper>
-      <LandingPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/event" element={<EventPage />} />
+          <Route path="/create" element={<EventCreatingPage />} />
+        </Routes>
+      </BrowserRouter>
     </Wrapper>
   );
 }

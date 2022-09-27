@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const EventTime = () => {
-  return <Wrapper>Time</Wrapper>;
+  return <Wrapper>Time: 18 August 6:00PM to 19 August 1:00PM UTC +10</Wrapper>;
 };
 
 export default EventTime;

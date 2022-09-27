@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const EventLocation = () => {
-  return <Wrapper>Location</Wrapper>;
+  return <Wrapper>Location: Street name, Suburb, State, Postcode </Wrapper>;
 };
 
 export default EventLocation;
